@@ -70,6 +70,7 @@ In Git program:
 | 5 | Als Benutzer möchte ich ohne Internetverbindung spielen.<br/> AK: Das Spiel soll offline gespielt werden können. | 5 | 2 |
 | 6 | Als Programmierer möchte ich das Programm einfach nachvollziehen können um es nachbauen, warten und neue Features einfügen zu können.<br/>AK: Kommentare im Code. Logische Struktur (Klassen, Methoden, Variablen). | 3 | 1 |
 | 7 | Als Benutzer möchte ich, dass das Spiel an meinen Computer angepasst ist.<br/>AK: Das Spiel ist für alle Bildschirmgrößen geeignet. | 3 | 1 |
+| 8 | Als Benutzer möchte ich die Spielregeln kennenlernen.<br/> AK: Neue Fenster mit Spielregeln mit ein Button erreichbar. | 3 | 2 |
 
 Legende : AK = Akzeptanzkriterium
 
@@ -78,7 +79,7 @@ Legende : AK = Akzeptanzkriterium
 |:-:|:-:|
 |  US 2 | US 1  |
 |  US 3 | US 4  |
-|  US 5 |       |
+|  US 5 | US 8  |
 |  US 6 |       |
 |  US 7 |       |
 
