@@ -65,7 +65,7 @@ In Git program:
 |:-:|-----|:-:|:-:|
 | 1 | Als Benutzer möchte ich verschiedene Schwierigkeitsgrade <br/>AK: Die Geschwindigkeit der Kugel beschleunigt sich. | 8 | 2 |
 | 2 | Als Benutzer möchte ich das Spiel neustarten und verlassen können.<br/>AK: Neustart und Exit durch Buttons. | 2 | 2 |
-| 3 | Als Benutzer möchte ich Hintergrundmusik mit einstellbarer Lautstärke.<br/>AK:  | 5 | 3 |
+| 3 | Als Benutzer möchte ich Hintergrundmusik mit einstellbarer Lautstärke.<br/>AK: SLider für die Musikstärke und Buttons für on/off. | 5 | 3 |
 | 4 | Als Benutzer möchte ich meinen Punktestand sobald das Spiel fertig ist wissen.<br/>AK: Öffnen eines neuen Fensters welches den Punktestand anzeigt. | 5 | 2 |
 | 5 | Als Benutzer möchte ich ohne Internetverbindung spielen.<br/> AK: Das Spiel soll offline gespielt werden können. | 5 | 2 |
 | 6 | Als Programmierer möchte ich das Programm einfach nachvollziehen können um es nachbauen, warten und neue Features einfügen zu können.<br/>AK: Kommentare im Code. Logische Struktur (Klassen, Methoden, Variablen). | 3 | 1 |
