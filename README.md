@@ -1,19 +1,33 @@
-# java_application2019
-**Pongspiel**
-***
-Matthieu Doerler, Emilie Gehl, Jules Beyel
+# Pongspiel:
 
-# Inhaltverzeichnis
+Programmieren II / Software Engineering Projekt
 
-## 1. Einleitung
-## 2. Build-Anleitung
-## 3. Bedienungsanleitung
-## 4. Userstory
-## 5. Releaseplan mit den Ausbaustufen
-## 6. Taskliste für die Umsetzung der User Story
-## 7. Umsetzung
-## 8. Klassendiagramm
-## 9. Dokumentation wichtiger Code Snippets
+
+
+Mitglieder: Matthieu Doerler, Jules Beyel, Emilie Gehl
+
+
+### Inhaltsverzeichnis
+
+1. [Einleitung](#einleitung)
+1. [Ziele](#ziele)
+1. [Randbedingungen](#randbedingungen)
+1. [Build-Anleitung](#build-anleitung)
+1. [Kurze Bedienungsanleitung](#kurze-bedienungsanleitung)
+1. [Userstories](#userstories)
+1. [Releaseplan](#releaseplan)
+1. [Dokumentation Sprint 1](#dokumentation-sprint-1)
+    + [Taskliste für die Umsetzung der Userstories](#taskliste-für-die-umsetzung-der-userstories)
+    + [Dokumentation wichtiger Code Snippets](#dokumentation-wichtiger-code-snippets)
+    + [Ergebnisse nach Umsetzung der Userstories](#ergebnisse-nach-umsetzung-der-userstories)
+    + [Testfaelle in Bezug auf Akzeptanzkritierium](#testfaelle-in-bezug-auf-akzeptanzkritierium)
+    
+1. [Dokumentation Sprint 2](#dokumentation-sprint-2)
+    + [Taskliste für die Umsetzung der Userstories](#taskliste-für-die-umsetzung-der-userstories)
+    + [Klassendiagramm](#klassendiagramm)
+    + [Dokumentation wichtiger Code Snippets](#dokumentation-wichtiger-code-snippets)
+    + [Ergebnisse nach Umsetzung der Userstories](#ergebnisse-nach-umsetzung-der-userstories)
+    + [Testfaelle in Bezug auf Akzeptanzkritierium](#testfaelle-in-bezug-auf-akzeptanzkritierium)
 
 # Software Engineering
 
@@ -44,3 +58,19 @@ In Git program:
 9. Prüfen Sie in das Ordner "target" ob Sie eine Datei .jar haben.
 
 ## 3. Bedienungsanleitung
+
+## 4. Userstories
+
+| **Userstory Nr.** |   **Userstories / Akzeptanzkriterien**  | **Storypoints**  |  **Priorität** |
+|:-:|-----|:-:|:-:|
+| 1 | Als Benutzer möchte ich verschiedene Schwierigkeitsgrade <br/>AK: Die Geschwindigkeit der Kugel beschleunigt sich. | 8 | 2 |
+| 2 | Als Benutzer möchte ich das Spiel neustarten und verlassen können.<br/>AK: Neustart und Exit durch Buttons. | 2 | 2 |
+| 3 | Als Benutzer möchte ich Hintergrundmusik mit einstellbarer Lautstärke.<br/>AK:  | 5 | 3 |
+| 4 | Als Benutzer möchte ich meinen Punktestand sobald das Spiel fertig ist wissen.<br/>AK: Öffnen eines neuen Fensters welches den Punktestand anzeigt. | 5 | 2 |
+| 5 | Als Benutzer möchte ich ohne Internetverbindung spielen.<br/> AK: Das Spiel soll offline gespielt werden können. | 5 | 2 |
+| 6 | Als Programmierer möchte ich das Programm einfach nachvollziehen können um es nachbauen, warten und neue Features einfügen zu können.<br/>AK: Kommentare im Code. Logische Struktur (Klassen, Methoden, Variablen). | 3 | 1 |
+| 7 | Als Benutzer möchte ich, dass das Spiel an meinen Computer angepasst ist.<br/>AK: Das Spiel ist für alle Bildschirmgrößen geeignet. | 3 | 1 |
+
+Legende : AK = Akzeptanzkriterium
+
+## 5. Releaseplan
