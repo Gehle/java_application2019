@@ -73,4 +73,13 @@ In Git program:
 
 Legende : AK = Akzeptanzkriterium
 
-## 5. Releaseplan
+## Releaseplan
+|  Release 1 | Release 2  |
+|:-:|:-:|
+|  US 2 | US 1  |
+|  US 3 | US 4  |
+|  US 5 |       |
+|  US 6 |       |
+|  US 7 |       |
+
+Legende : US = Userstory
