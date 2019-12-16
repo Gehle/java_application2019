@@ -73,8 +73,7 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			
-			//VueController controller =loader.getController();
-			//controller.setMain(this);
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
