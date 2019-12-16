@@ -25,7 +25,7 @@ public class Main extends Application {
 
 	//static MediaPlayer mediaplayer = new MediaPlayer(media);
 	
-	//public static int alban =3;
+	
 	
 	 
 	private static Stage primaryStage;
