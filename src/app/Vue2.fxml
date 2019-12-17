@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.VueController">
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="app.VueController">
    <children>
       <Label layoutX="5.0" prefHeight="342.0" prefWidth="405.0" />
       <ImageView fitHeight="344.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">

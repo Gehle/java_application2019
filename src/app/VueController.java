@@ -88,7 +88,7 @@ public class VueController {
 		Main.showScene();
 	}
 
-	public void game(ActionEvent event) {
+	public void game() {
 
 		PongGame.launcher(null);
 	}
