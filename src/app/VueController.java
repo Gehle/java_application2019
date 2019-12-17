@@ -88,7 +88,6 @@ public void returned(ActionEvent event) {
 }
 public void game(ActionEvent event) {
 	
-	
 	Main.showScene4();
 }
 
