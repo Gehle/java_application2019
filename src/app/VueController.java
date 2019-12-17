@@ -40,26 +40,23 @@ public MediaPlayer getMediaplayer() {
 }
 
 
-
-
-
 public void exit(ActionEvent event) {
 	
 	System.exit(0);
 	
 }
 
-
 @FXML
 
 public void playSound(ActionEvent event) {
 	
 	mediaplayer.play();
+}
+@FXML
+
+public void volume (ActionEvent event) {
 	
-	mediaplayer.setVolume(sldQuertety.getValue());
-	
-	
-	
+	mediaplayer.setVolume(sldQuertety.getValue());	
 }
 @FXML
 public void pause(ActionEvent event) {
@@ -94,6 +91,8 @@ public void game(ActionEvent event) {
 	
 	Main.showScene4();
 }
+
+
 
 
 }

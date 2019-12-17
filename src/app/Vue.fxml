@@ -15,26 +15,27 @@
             <Image url="@../../source/background.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="btn" layoutX="292.0" layoutY="252.0" mnemonicParsing="false" onAction="#exit" prefHeight="51.0" prefWidth="102.0" text="Exit" />
+      <Button fx:id="btn" layoutX="295.0" layoutY="246.0" mnemonicParsing="false" onAction="#exit" prefHeight="50.0" prefWidth="96.0" text="Exit" />
       <Text fill="#7c4242" layoutX="210.0" layoutY="52.0" onDragDetected="#change" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the PONG GAME" textAlignment="CENTER" wrappingWidth="266.31500244140625">
          <font>
             <Font size="27.0" />
          </font></Text>
-      <Button alignment="CENTER_RIGHT" layoutX="601.0" layoutY="322.0" mnemonicParsing="false" onAction="#playSound" prefHeight="42.0" prefWidth="78.0" text="Music" />
-      <Button alignment="CENTER_RIGHT" layoutX="601.0" layoutY="409.0" mnemonicParsing="false" onAction="#pause" prefHeight="41.0" prefWidth="78.0" text="Mute" />
-      <Button alignment="CENTER" layoutX="292.0" layoutY="101.0" mnemonicParsing="false" onAction="#game" prefHeight="51.0" prefWidth="102.0" text="Start" />
-      <Slider fx:id="sldQuertety" layoutX="592.0" layoutY="364.0" max="1.0" prefHeight="42.0" prefWidth="96.0" value="0.5" />
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="292.0" layoutY="152.0" mnemonicParsing="false" onAction="#regle" prefHeight="51.0" prefWidth="102.0" text="How to play" />
-      <Button alignment="CENTER" layoutX="292.0" layoutY="201.0" mnemonicParsing="false" onAction="#credit" prefHeight="51.0" prefWidth="102.0" text="Credits" />
-      <ImageView fitHeight="30.0" fitWidth="37.0" layoutX="610.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../source/mute1.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="22.0" fitWidth="18.0" layoutX="610.0" layoutY="334.0" pickOnBounds="true" smooth="false">
+      <Button alignment="CENTER" layoutX="295.0" layoutY="96.0" mnemonicParsing="false" onAction="#game" prefHeight="50.0" prefWidth="96.0" text="Start" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="295.0" layoutY="146.0" mnemonicParsing="false" onAction="#regle" prefHeight="50.0" prefWidth="96.0" text="How to play" />
+      <Button alignment="CENTER" layoutX="295.0" layoutY="196.0" mnemonicParsing="false" onAction="#credit" prefHeight="50.0" prefWidth="96.0" text="Credits" />
+      <Button alignment="CENTER" layoutX="593.0" layoutY="250.0" mnemonicParsing="false" onAction="#playSound" prefHeight="42.0" prefWidth="78.0" text="Music" />
+      <ImageView fitHeight="22.0" fitWidth="18.0" layoutX="64.0" layoutY="121.0" pickOnBounds="true" smooth="false">
          <image>
             <Image url="@../../source/music1.jpg" />
          </image>
       </ImageView>
+      <Slider fx:id="sldQuertety" layoutX="585.0" layoutY="372.0" max="1.0" prefHeight="42.0" prefWidth="96.0" value="0.5" />
+      <Button alignment="CENTER" layoutX="593.0" layoutY="292.0" mnemonicParsing="false" onAction="#pause" prefHeight="41.0" prefWidth="78.0" text="Mute" />
+      <ImageView fitHeight="30.0" fitWidth="37.0" layoutX="58.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../source/mute1.png" />
+         </image>
+      </ImageView>
+      <Button alignment="CENTER" layoutX="573.0" layoutY="346.0" mnemonicParsing="false" onAction="#volume" prefHeight="22.0" prefWidth="118.0" text=" loundness" />
    </children>
 </AnchorPane>

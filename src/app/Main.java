@@ -52,6 +52,7 @@ public class Main extends Application {
 			primaryStage.show();
 			
 			VueController controller = loader.getController();
+			
 			controller.getMediaplayer().play();
 			
 			
@@ -102,6 +103,7 @@ public class Main extends Application {
 	
 	
 }
+
 
 	//variable
 			private static final int width = 800;
