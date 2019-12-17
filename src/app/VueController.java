@@ -94,9 +94,6 @@ public void game(ActionEvent event) {
 	
 	Main.showScene4();
 }
-/*@FXML
-public void volume (ActionEvent event) {
-	mediaplayer.setVolume(sldQuertety.getValue());
-}*/
+
 
 }
