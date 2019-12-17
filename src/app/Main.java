@@ -53,7 +53,7 @@ public class Main extends Application {
 			
 			VueController controller = loader.getController();
 			controller.getMediaplayer().play();
-			//controller.getMediaplayer().setVolume(controller.getSldQuertety().getValue());
+			
 			
 			
 			

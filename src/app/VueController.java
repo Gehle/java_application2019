@@ -55,11 +55,7 @@ public void exit(ActionEvent event) {
 public void playSound(ActionEvent event) {
 	
 	mediaplayer.play();
-	//if (mediaplayer.isAutoPlay() ) {
-	//	mediaplayer.pause();
-	//if (mediaplayer.isMute() ) {
-	//	mediaplayer.play();
-	//}
+	
 	mediaplayer.setVolume(sldQuertety.getValue());
 	
 	
