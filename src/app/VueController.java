@@ -12,87 +12,85 @@ import app.Main;
 
 public class VueController {
 
-private Main main;
+	private Main main;
 
-@FXML
-private Button btn;
-@FXML
-public Slider sldQuertety;
+	@FXML
+	private Button btn;
+	@FXML
+	public Slider sldQuertety;
 
+	public Slider getSldQuertety() {
+		return sldQuertety;
+	}
 
-public Slider getSldQuertety() {
-	return sldQuertety;
-}
+	public void setSldQuertety(Slider sldQuertety) {
+		this.sldQuertety = sldQuertety;
+	}
 
+	public String path = "@../../source/arcade.mp3";
+	public Media media = new Media(new File(path).toURI().toString());
 
-public void setSldQuertety(Slider sldQuertety) {
-	this.sldQuertety = sldQuertety;
-}
+	public MediaPlayer mediaplayer = new MediaPlayer(media);
 
-public String path = "@../../source/arcade.mp3";
-public Media media =new Media(new File(path).toURI().toString());
+	public MediaPlayer getMediaplayer() {
+		return mediaplayer;
+	}
 
-public MediaPlayer mediaplayer = new MediaPlayer(media);
+	public void exit(ActionEvent event) {
 
+		System.exit(0);
 
-public MediaPlayer getMediaplayer() {
-	return mediaplayer;
-}
+	}
 
+	@FXML
 
-public void exit(ActionEvent event) {
-	
-	System.exit(0);
-	
-}
+	public void playSound(ActionEvent event) {
 
-@FXML
+		mediaplayer.play();
+	}
 
-public void playSound(ActionEvent event) {
-	
-	mediaplayer.play();
-}
-@FXML
+	@FXML
 
-public void volume (ActionEvent event) {
-	
-	mediaplayer.setVolume(sldQuertety.getValue());	
-}
-@FXML
-public void pause(ActionEvent event) {
-	
+	public void volume(ActionEvent event) {
+
+		mediaplayer.setVolume(sldQuertety.getValue());
+	}
+
+	@FXML
+	public void pause(ActionEvent event) {
+
 		mediaplayer.pause();
-	
-	
-}
 
-@FXML
-public void change(ActionEvent event) {
-	mediaplayer.setVolume(sldQuertety.getValue());
-}
-public void setMain(Main main) {
-	this.main = main;
-	
-}
-public void regle(ActionEvent event) {
-	Main.showScene2();
-	
-}
-public void credit(ActionEvent event) {
-	Main.showScene3();
-	
-}
-public void returned(ActionEvent event) {
-	
-	Main.showScene();
-}
-public void game(ActionEvent event) {
-	
-	
-	Main.showScene4();
-}
+	}
 
+	@FXML
+	public void change(ActionEvent event) {
+		mediaplayer.setVolume(sldQuertety.getValue());
+	}
 
+	public void setMain(Main main) {
+		this.main = main;
 
+	}
+
+	public void regle(ActionEvent event) {
+		Main.showScene2();
+
+	}
+
+	public void credit(ActionEvent event) {
+		Main.showScene3();
+
+	}
+
+	public void returned(ActionEvent event) {
+
+		Main.showScene();
+	}
+
+	public void game(ActionEvent event) {
+
+		PongGame.launcher(null);
+	}
 
 }
