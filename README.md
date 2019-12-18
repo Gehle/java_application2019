@@ -10,24 +10,23 @@ Mitglieder: Matthieu Doerler, Jules Beyel, Emilie Gehl
 ### Inhaltsverzeichnis
 
 1. [Einleitung](#einleitung)
-1. [Ziele](#ziele)
-1. [Randbedingungen](#randbedingungen)
+    + [Ziele](#ziele)
+    + [Randbedingungen](#randbedingungen)
 1. [Build-Anleitung](#build-anleitung)
-1. [Kurze Bedienungsanleitung](#kurze-bedienungsanleitung)
+1. [Bedienungsanleitung](#bedienungsanleitung)
 1. [Userstories](#userstories)
 1. [Releaseplan](#releaseplan)
 1. [Dokumentation Sprint 1](#dokumentation-sprint-1)
     + [Taskliste für die Umsetzung der Userstories](#taskliste-für-die-umsetzung-der-userstories)
     + [Dokumentation wichtiger Code Snippets](#dokumentation-wichtiger-code-snippets)
-    + [Ergebnisse nach Umsetzung der Userstories](#ergebnisse-nach-umsetzung-der-userstories)
     + [Testfaelle in Bezug auf Akzeptanzkritierium](#testfaelle-in-bezug-auf-akzeptanzkritierium)
     
 1. [Dokumentation Sprint 2](#dokumentation-sprint-2)
     + [Taskliste für die Umsetzung der Userstories](#taskliste-für-die-umsetzung-der-userstories)
-    + [Klassendiagramm](#klassendiagramm)
     + [Dokumentation wichtiger Code Snippets](#dokumentation-wichtiger-code-snippets)
-    + [Ergebnisse nach Umsetzung der Userstories](#ergebnisse-nach-umsetzung-der-userstories)
     + [Testfaelle in Bezug auf Akzeptanzkritierium](#testfaelle-in-bezug-auf-akzeptanzkritierium)
+1. [Ergebnisse nach Umsetzung der Userstories](#ergebnisse-nach-umsetzung-der-userstories)
+1. [Klassendiagramm](#klassendiagramm)
 
 # Software Engineering
 
@@ -79,9 +78,8 @@ Legende : AK = Akzeptanzkriterium
 |:-:|:-:|
 |  US 2 | US 1  |
 |  US 3 | US 4  |
-|  US 5 | US 8  |
-|  US 6 |       |
-|  US 7 |       |
+|  US 5 | US 7  |
+|  US 6 | US 8  |
 
 Legende : US = Userstory
 
@@ -102,12 +100,15 @@ Legende : US = Userstory
 
 ### Dokumentation wichtiger Code Snippets
 
+
+
 ### Testfälle in Bezug auf Akzeptanzkriterium
 | Testfall | Aus US/AK | Vorbedingung | Ablauf | Resultat |
 |:-:|:-:|-----|-----|-----|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| 1 | 2 |  |  |  |
+| 2 | 3 |  |  |  |
+| 3 | 5 |  |  |  |
+| 4 | 6 |  |  |  |
 
 ## 7. Dokumentation Sprint 2
 ###  Taskliste für die Umsetzung der Userstories
@@ -124,14 +125,6 @@ Legende : US = Userstory
 | 9 |  |  |  |
 | 10 |  |  |  |
 
-### Klassendiagramm
-
-
-
-### Ergebnisse nach Umsetzung der Userstories
-
-
-
 ### Dokumentation wichtiger Code Snippets
 
 
@@ -139,7 +132,15 @@ Legende : US = Userstory
 ### Testfälle in Bezug auf Akzeptanzkriterium
 | Testfall | Aus US/AK | Vorbedingung | Ablauf | Resultat |
 |:-:|:-:|-----|-----|-----|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| 1 | 1 |  |  |  |
+| 2 | 4 |  |  |  |
+| 3 | 7 |  |  |  |
+| 4 | 8 |  |  |  |
+
+## 8. Ergebnisse nach Umsetzung der Userstories
+
+
+
+## 9. Klassendiagramm
+
 
