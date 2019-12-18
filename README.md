@@ -74,7 +74,7 @@ In Git program:
 
 Legende : AK = Akzeptanzkriterium
 
-## Releaseplan
+## 5. Releaseplan
 |  Release 1 | Release 2  |
 |:-:|:-:|
 |  US 2 | US 1  |
@@ -84,3 +84,62 @@ Legende : AK = Akzeptanzkriterium
 |  US 7 |       |
 
 Legende : US = Userstory
+
+## 6. Dokumentation Sprint 1
+###  Taskliste für die Umsetzung der Userstories
+| Tasknummer | Tasks | Userstory | Geschätzter Aufwand |
+|:-:|-----|:-:|:-:|
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
+| 8 |  |  |  |
+| 9 |  |  |  |
+| 10 |  |  |  |
+
+### Dokumentation wichtiger Code Snippets
+
+### Testfälle in Bezug auf Akzeptanzkriterium
+| Testfall | Aus US/AK | Vorbedingung | Ablauf | Resultat |
+|:-:|:-:|-----|-----|-----|
+| 1 |  |  |  |  |
+| 2 |  |  |  |  |
+| 3 |  |  |  |  |
+
+## 7. Dokumentation Sprint 2
+###  Taskliste für die Umsetzung der Userstories
+| Tasknummer | Tasks | Userstory | Geschätzter Aufwand |
+|:-:|-----|:-:|:-:|
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
+| 8 |  |  |  |
+| 9 |  |  |  |
+| 10 |  |  |  |
+
+### Klassendiagramm
+
+
+
+### Ergebnisse nach Umsetzung der Userstories
+
+
+
+### Dokumentation wichtiger Code Snippets
+
+
+
+### Testfälle in Bezug auf Akzeptanzkriterium
+| Testfall | Aus US/AK | Vorbedingung | Ablauf | Resultat |
+|:-:|:-:|-----|-----|-----|
+| 1 |  |  |  |  |
+| 2 |  |  |  |  |
+| 3 |  |  |  |  |
+
