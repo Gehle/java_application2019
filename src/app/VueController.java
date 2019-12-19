@@ -12,8 +12,6 @@ import app.Main;
 
 public class VueController {
 
-	private Main main;
-
 	@FXML
 	private Button btn;
 	@FXML
@@ -66,11 +64,6 @@ public class VueController {
 	@FXML
 	public void change(ActionEvent event) {
 		mediaplayer.setVolume(sldQuertety.getValue());
-	}
-
-	public void setMain(Main main) {
-		this.main = main;
-
 	}
 
 	public void regle(ActionEvent event) {

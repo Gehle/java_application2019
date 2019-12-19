@@ -11,27 +11,18 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import app.Main;
 import app.VueController;
-
-import java.util.Random;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
-import javafx.scene.text.TextAlignment;
 import javafx.util.Duration;
 
 public class Main extends Application {
 
-	// static MediaPlayer mediaplayer = new MediaPlayer(media);
-
 	private static Stage primaryStage;
-	private static Stage gameStage;
 
 	@Override
 	public void start(Stage primaryStage) {
@@ -94,8 +85,6 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.show();
 
-			// VueController controller =loader.getController();
-			// controller.setMain(this);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -108,7 +97,6 @@ public class Main extends Application {
 	private static final int rball = 20; // diam balle
 	private static final int lrect = 120; // largeur rectangle
 	private static final int hrect = 20; // hauteur rectangle
-	//private static final int vrect = 15; //vitesse rectangle
 	private static final int rectY = 570; //placement rectangle Y
 	static double ballSpeedX;
 	static double ballSpeedY;
@@ -122,16 +110,13 @@ public class Main extends Application {
 			BorderPane root = new BorderPane();
 			root.setStyle("-fx-background-color:BLACK;");
 			Scene scene = new Scene(root, psx, psy);
-			// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
 			Circle ball = new Circle(psx / 2, psy / 2, rball);
 			ball.setFill(Color.WHITE);
 
-			Rectangle joueur = new Rectangle((psx - lrect) / 2, rectY, lrect, hrect); // defini position et taille du
-																						// rectangle joueur
+			Rectangle joueur = new Rectangle((psx - lrect) / 2, rectY, lrect, hrect); // defini position et taille du rectangle joueur																	
 			joueur.setFill(Color.WHITE);
 
-			/* Text text = new Text("PERDU!\n Score: " + score); */
 			Text text = new Text("PERDU!");
 			text.setFont(Font.font("Calibri", 70));
 			text.setFill(Color.WHITE);
@@ -147,18 +132,6 @@ public class Main extends Application {
 
 				joueur.setX(e.getSceneX() - lrect / 2);
 			});
-
-			/*
-			 * joueur.setOnKeyPressed(new EventHandler<KeyEvent>() { // detecte si on a
-			 * appuié sur une touche public void handle(KeyEvent event) { if
-			 * (event.getCode() == KeyCode.LEFT) { // le rectangle se déplace vers la gauche
-			 * joueur.setX(joueur.getX() - vrect); }
-			 * 
-			 * if (event.getCode() == KeyCode.RIGHT) { // le rectangle se déplace vers la
-			 * droite joueur.setX(joueur.getX() + vrect);
-			 * 
-			 * } event.consume(); } });
-			 */
 
 			ballSpeedX = dx;
 			ballSpeedY = -dy;
@@ -182,7 +155,6 @@ public class Main extends Application {
 							dy += 0.25;
 							ballSpeedY = dy;
 							score += 1;
-
 						}
 					}
 
@@ -211,11 +183,6 @@ public class Main extends Application {
 			}));
 			loop.setCycleCount(Timeline.INDEFINITE);
 			loop.play();
-
-			// marche pas
-			/*
-			 * if(text.isVisible() == true){ loop.stop(); }
-			 */
 
 			primaryStage.setResizable(false);
 			primaryStage.setScene(scene);
