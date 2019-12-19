@@ -78,7 +78,6 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader();
 
 			loader.setLocation(Main.class.getResource("Vue3.fxml"));
-			loader.setLocation(Main.class.getResource("Vue3.fxml"));
 			layout = (Pane) loader.load();
 			Scene scene = new Scene(layout);
 
@@ -192,6 +191,10 @@ public class Main extends Application {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static void main(String [] args) {
+		launch(args);
 	}
 
 }
