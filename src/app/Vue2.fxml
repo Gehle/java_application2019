@@ -18,8 +18,8 @@
       </ImageView>
       <Text layoutX="243.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to PongGame. You can PLAY this free version. This game is one of the first video games ever created." textAlignment="CENTER" wrappingWidth="122.16452636719" />
       <TextFlow layoutY="115.0" prefHeight="200.0" prefWidth="200.0" />
-      <Text layoutX="170.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the game below, use the keyboard &lt;--  and --&gt; keys to control the paddle" textAlignment="CENTER" wrappingWidth="200.0" />
-      <Text fill="#ba0d0d" layoutX="62.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The first player to get 10 points will win the game" textAlignment="CENTER" wrappingWidth="180.5367431640625" />
+      <Text layoutX="178.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the game below, use the mouse to control the paddle" textAlignment="CENTER" wrappingWidth="200.0" />
+      <Text fill="#ba0d0d" layoutX="62.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The goal is that the ball does not fall" textAlignment="CENTER" wrappingWidth="142.13671875" />
       <Button layoutX="318.0" layoutY="301.0" mnemonicParsing="false" onAction="#returned" text="Return" />
    </children>
 </AnchorPane>
