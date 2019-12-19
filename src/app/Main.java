@@ -7,6 +7,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.VPos;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import app.Main;
@@ -121,10 +123,12 @@ public class Main extends Application {
 			text.setFont(Font.font("Calibri", 70));
 			text.setFill(Color.WHITE);
 			text.setTextOrigin(VPos.CENTER);
-			double width = text.getLayoutBounds().getWidth();
-			text.setLayoutX(psx / 2 - width / 2);
-			text.setLayoutY(300);
+			double widthText = text.getLayoutBounds().getWidth();
+			text.setLayoutX(psx / 2 - widthText / 2);
+			text.setLayoutY(250);
 			text.setVisible(false);
+			
+			
 
 			root.getChildren().addAll(joueur, ball, text);
 
@@ -172,12 +176,22 @@ public class Main extends Application {
 					// collision bas
 					if (ball.getCenterY() >= (psy - (rball / 2))) {
 						text.setVisible(true);
-						ballSpeedX = 0;
+						//message.setVisible(true);
+						/*ballSpeedX = 0;
 						ballSpeedY = 0;
 						ball.setCenterX(25);
 						ball.setCenterY(25); 
 						ball.setFill(Color.BLACK);
-						ball.toBack();
+						ball.toBack();*/
+						
+						scene.setOnKeyPressed(new EventHandler<KeyEvent>() { // detecte si on a appuié sur une touche
+							public void handle(KeyEvent event) {
+								if (event.getCode() == KeyCode.ESCAPE) {
+									Main.mainScene();
+								}
+								event.consume();
+							}
+						});
 					}
 					primaryStage.setTitle("Pong || Score: " + score);
 				}
@@ -185,6 +199,10 @@ public class Main extends Application {
 			loop.setCycleCount(Timeline.INDEFINITE);
 			loop.play();
 
+			if (ball.getCenterY() >= (psy - (rball / 2))) {
+				loop.stop();
+			}
+			
 			primaryStage.setResizable(false);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Pong");
@@ -195,4 +213,6 @@ public class Main extends Application {
 		}
 	}
 
+	
+	
 }
