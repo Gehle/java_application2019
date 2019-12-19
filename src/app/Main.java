@@ -7,6 +7,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.VPos;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import app.Main;
@@ -21,6 +23,19 @@ import javafx.scene.text.Text;
 import javafx.util.Duration;
 
 public class Main extends Application {
+
+
+	private static final int psx = 750;  // taille fenetre en x
+	private static final int psy = 600;   // taille fenetre en y
+	private static final int rball = 20; // diam balle
+	private static final int lrect = 120; // largeur rectangle
+	private static final int hrect = 20; // hauteur rectangle
+	private static final int rectY = 570; //placement rectangle Y
+	static double ballSpeedX= 0.5;
+	static double ballSpeedY= -0.5;
+	static double dx = 0.5;
+	static double dy = 0.5;
+	static int score = 0;
 
 	private static Stage primaryStage;
 
@@ -92,18 +107,8 @@ public class Main extends Application {
 
 	}
 
-	private static final int psx = 750;  // taille fenetre en x
-	private static final int psy = 600;   // taille fenetre en y
-	private static final int rball = 20; // diam balle
-	private static final int lrect = 120; // largeur rectangle
-	private static final int hrect = 20; // hauteur rectangle
-	private static final int rectY = 570; //placement rectangle Y
-	static double ballSpeedX;
-	static double ballSpeedY;
-	static double dx = 0.5;
-	static double dy = 0.5;
-	static int score = 0;
-	
+
+
 	public static void pongGame() {
 		try {
 
@@ -121,24 +126,38 @@ public class Main extends Application {
 			text.setFont(Font.font("Calibri", 70));
 			text.setFill(Color.WHITE);
 			text.setTextOrigin(VPos.CENTER);
-			double width = text.getLayoutBounds().getWidth();
-			text.setLayoutX(psx / 2 - width / 2);
-			text.setLayoutY(300);
+			double widthText = text.getLayoutBounds().getWidth();
+			text.setLayoutX(psx / 2 - widthText / 2);
+			text.setLayoutY(250);
 			text.setVisible(false);
+			
+			Text message = new Text("Press ESC to return to the menu");
+			message.setFont(Font.font("Calibri", 40));
+			message.setFill(Color.WHITE);
+			message.setTextOrigin(VPos.CENTER);
+			double widthMessage = message.getLayoutBounds().getWidth();
+			message.setLayoutX(psx / 2 - widthMessage / 2);
+			message.setLayoutY(350);
+			message.setVisible(false);
 
-			root.getChildren().addAll(joueur, ball, text);
+			root.getChildren().addAll(joueur, ball, text, message);
 
 			scene.setOnMouseMoved(e -> {
 
 				joueur.setX(e.getSceneX() - lrect / 2);
 			});
 
+
 			ballSpeedX = dx;
 			ballSpeedY = -dy;
 
+			//ballSpeedX = dx;
+			//ballSpeedY = -dy;
+
+
 			Timeline loop = new Timeline(new KeyFrame(Duration.millis(5), new EventHandler<ActionEvent>() {
 				public void handle(ActionEvent arg) {
-
+					
 					// deplacement:
 					ball.setCenterX(ball.getCenterX() + ballSpeedX);
 					ball.setCenterY(ball.getCenterY() - ballSpeedY);
@@ -171,18 +190,33 @@ public class Main extends Application {
 					// collision bas
 					if (ball.getCenterY() >= (psy - (rball / 2))) {
 						text.setVisible(true);
-						ballSpeedX = 0;
+						message.setVisible(true);
+						/*ballSpeedX = 0;
 						ballSpeedY = 0;
 						ball.setCenterX(25);
 						ball.setCenterY(25); 
 						ball.setFill(Color.BLACK);
-						ball.toBack();
+						ball.toBack();*/
+						
+						scene.setOnKeyPressed(new EventHandler<KeyEvent>() { // detecte si on a appuié sur une touche
+							public void handle(KeyEvent event) {
+								if (event.getCode() == KeyCode.ESCAPE) {
+									Main.mainScene();
+								}
+								event.consume();
+							}
+						});
 					}
 					primaryStage.setTitle("Pong || Score: " + score);
 				}
 			}));
 			loop.setCycleCount(Timeline.INDEFINITE);
 			loop.play();
+
+
+			if (ball.getCenterY() >= (psy - (rball / 2))) {
+				loop.stop();
+			}
 
 			primaryStage.setResizable(false);
 			primaryStage.setScene(scene);
@@ -194,4 +228,8 @@ public class Main extends Application {
 		}
 	}
 
+	public static void main(String[] args) {
+		launch(args);
+	}
+	
 }

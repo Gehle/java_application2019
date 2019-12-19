@@ -35,30 +35,22 @@ public class VueController {
 	}
 
 	public void exit(ActionEvent event) {
-
 		System.exit(0);
-
 	}
 
 	@FXML
-
 	public void playSound(ActionEvent event) {
-
 		mediaplayer.play();
 	}
 
 	@FXML
-
 	public void volume(ActionEvent event) {
-
 		mediaplayer.setVolume(sldQuertety.getValue());
 	}
 
 	@FXML
 	public void pause(ActionEvent event) {
-
 		mediaplayer.pause();
-
 	}
 
 	@FXML
@@ -68,21 +60,17 @@ public class VueController {
 
 	public void regle(ActionEvent event) {
 		Main.showScene2();
-
 	}
 
 	public void credit(ActionEvent event) {
 		Main.showScene3();
-
 	}
 
 	public void returned(ActionEvent event) {
-
 		Main.mainScene();
 	}
 
 	public void game(ActionEvent event) {
-
 		Main.pongGame();
 	}
 
