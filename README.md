@@ -33,7 +33,7 @@ Mitglieder: Matthieu Doerler, Jules Beyel, Emilie Gehl
 ## 1. Einleitung
 Willkommen zu unserem Projekt. Wir haben ein Spiel für Menschen im Alter von 5 bis 99 Jahren entwickelt. Es kann einzeln abgespielt werden und es ist keine Internetverbindung erforderlich. Es ist eine tolle Möglichkeit, die Zeit zu verbringen und gleichzeitig Spaß zu haben.
 ### Ziele
-Es soll ein kleines Programm erstellt werden bei dem Fragen gestellt und die Richtige Lösung angezeigt werden. Die Verwendung des Programms soll auf dem Desktop eines MAC, Windows oder Linux Computer ausgeführt werden können.
+Das Ziel ist es die erlernten Fähigkeiten und Kompetenzen im Bereich Programmieren und Software Engineering innerhalb eines einzigen Projektes in Verbindung zu bringen. Hierfür wollen wir das Spiel Pong programmieren. Auf einer graphischen Oberfläche soll unser Hauptprogramm (Das Spiel) originalgetreu dargestellt werden und unser Spiel darauf gespielt werden. Wir planen für dieses Projekt 2 Sprints.
 
 ### Randbedingungen
 - Die Programmierung der Anwendung soll in JAVA erfolgen.
@@ -67,7 +67,7 @@ Nach dem Start unserer App entdecken Sie die Startseite. Nachdem Sie sich über 
 | 1 | Als Benutzer möchte ich verschiedene Schwierigkeitsgrade <br/>AK: Die Geschwindigkeit der Kugel beschleunigt sich. | 8 | 2 |
 | 2 | Als Benutzer möchte ich das Spiel neustarten und verlassen können.<br/>AK: Neustart und Exit durch Buttons. | 2 | 2 |
 | 3 | Als Benutzer möchte ich Hintergrundmusik mit einstellbarer Lautstärke.<br/>AK: SLider für die Musikstärke und Buttons für on/off. | 5 | 3 |
-| 4 | Als Benutzer möchte ich meinen Punktestand sobald das Spiel fertig ist wissen.<br/>AK:  | 5 | 2 |
+| 4 | Als Benutzer möchte ich meinen Punktestand sobald das Spiel fertig ist wissen.<br/>AK: Das Punktestand ist während Spiel gezeigt. | 5 | 2 |
 | 5 | Als Benutzer möchte ich ohne Internetverbindung spielen.<br/> AK: Das Spiel soll offline gespielt werden können. | 5 | 2 |
 | 6 | Als Programmierer möchte ich das Programm einfach nachvollziehen können um es nachbauen, warten und neue Features einfügen zu können.<br/>AK: Kommentare im Code. Logische Struktur (Klassen, Methoden, Variablen). | 3 | 1 |
 | 7 | Als Benutzer möchte ich, dass das Spiel an meinen Computer angepasst ist.<br/>AK: Das Spiel ist für alle Bildschirmgrößen geeignet. | 3 | 1 |
@@ -91,12 +91,12 @@ Legende : US = Userstory
 |:-:|-----|:-:|:-:|
 | 1 | Grafisches Layout erstellen |  |  |
 | 2 | 4 Button für das Starten, Exit, Credit, Spielregel |  |  |
-| 3 | Methode für die Musik |  |  |
-| 4 | 3 Button und ein Slider für die Gestion der Musik |  |  |
-| 5 | Erstellen von 2 Fenster für Spielregeln und Credits mit je ein Button return |  |  |
+| 3 | Erstellen von 2 Fenster für Spielregeln und Credits mit je ein Button return |  |  |
+| 4 | Neue Klasse Vue |  |  |
+| 5 |  |  |  |
 | 6 |  |  |  |
-| 7 | Methode für die Geschwindig |  |  |
-| 8 |  |  |  |
+| 7 | Geschwindigkeitsteuerung  |  |  |
+| 8 | 3 Button und ein Slider für der Musiksteuerung |  |  |
 | 9 |  |  |  |
 | 10 | Inbetriebnahme aller setOnAction (Mouse,Taste) |  |  |
 
