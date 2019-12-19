@@ -45,8 +45,8 @@ public class Main extends Application {
 			primaryStage.show();
 
 			VueController controller = loader.getController();
-
-			controller.getMediaplayer().play();
+			//controller.getMediaplayer().pause();
+			//controller.getMediaplayer().play();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -176,6 +176,9 @@ public class Main extends Application {
 						ball.setCenterY(25); 
 						ball.setFill(Color.BLACK);
 						ball.toBack();
+										
+						
+						Main.mainScene();
 					}
 					primaryStage.setTitle("Pong || Score: " + score);
 				}

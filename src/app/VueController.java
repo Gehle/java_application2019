@@ -26,14 +26,14 @@ public class VueController {
 		this.sldQuertety = sldQuertety;
 	}
 
-	public String path = "@../../source/arcade.mp3";
-	public Media media = new Media(new File(path).toURI().toString());
+	//public String path = "@../../source/arcade.mp3";
+	//public Media media = new Media(new File(path).toURI().toString());
 
-	public MediaPlayer mediaplayer = new MediaPlayer(media);
+	//public MediaPlayer mediaplayer = new MediaPlayer(media);
 
-	public MediaPlayer getMediaplayer() {
-		return mediaplayer;
-	}
+	//public MediaPlayer getMediaplayer() {
+	//	return mediaplayer;
+	//}
 
 	public void exit(ActionEvent event) {
 
@@ -45,26 +45,26 @@ public class VueController {
 
 	public void playSound(ActionEvent event) {
 
-		mediaplayer.play();
+		//mediaplayer.play();
 	}
 
 	@FXML
 
 	public void volume(ActionEvent event) {
 
-		mediaplayer.setVolume(sldQuertety.getValue());
+		//mediaplayer.setVolume(sldQuertety.getValue());
 	}
 
 	@FXML
 	public void pause(ActionEvent event) {
 
-		mediaplayer.pause();
+		//mediaplayer.pause();
 
 	}
 
 	@FXML
 	public void change(ActionEvent event) {
-		mediaplayer.setVolume(sldQuertety.getValue());
+		//mediaplayer.setVolume(sldQuertety.getValue());
 	}
 
 	public void regle(ActionEvent event) {
@@ -78,9 +78,10 @@ public class VueController {
 	}
 
 	public void returned(ActionEvent event) {
-
+		//mediaplayer.stop();
 		Main.mainScene();
-		mediaplayer.pause();
+		
+		
 	}
 
 	public void game(ActionEvent event) {
