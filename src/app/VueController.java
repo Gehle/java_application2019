@@ -20,7 +20,8 @@ public class VueController {
 	public Slider getSldQuertety() {
 		return sldQuertety;
 	}
-
+	
+	
 	public void setSldQuertety(Slider sldQuertety) {
 		this.sldQuertety = sldQuertety;
 	}
