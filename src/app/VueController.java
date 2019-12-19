@@ -85,12 +85,12 @@ public class VueController {
 
 	public void returned(ActionEvent event) {
 
-		Main.showScene();
+		Main.mainScene();
 	}
 
-	public void game() {
+	public void game(ActionEvent event) {
 
-		PongGame.launcher(null);
+		Main.pongGame();
 	}
 
 }
