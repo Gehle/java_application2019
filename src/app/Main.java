@@ -24,6 +24,19 @@ import javafx.util.Duration;
 
 public class Main extends Application {
 
+	private static final int psx = 750;  // taille fenetre en x
+	private static final int psy = 600;   // taille fenetre en y
+	private static final int rball = 20; // diam balle
+	private static final int lrect = 120; // largeur rectangle
+	private static final int hrect = 20; // hauteur rectangle
+	private static final int rectY = 570; //placement rectangle Y
+	static double ballSpeedX= 0.5;
+	static double ballSpeedY= -0.5;
+	static double dx = 0.5;
+	static double dy = 0.5;
+	static int score = 0;
+	
+	
 	private static Stage primaryStage;
 
 	@Override
@@ -94,18 +107,6 @@ public class Main extends Application {
 
 	}
 
-	private static final int psx = 750;  // taille fenetre en x
-	private static final int psy = 600;   // taille fenetre en y
-	private static final int rball = 20; // diam balle
-	private static final int lrect = 120; // largeur rectangle
-	private static final int hrect = 20; // hauteur rectangle
-	private static final int rectY = 570; //placement rectangle Y
-	static double ballSpeedX;
-	static double ballSpeedY;
-	static double dx = 0.5;
-	static double dy = 0.5;
-	static int score = 0;
-	
 	public static void pongGame() {
 		try {
 
@@ -128,21 +129,28 @@ public class Main extends Application {
 			text.setLayoutY(250);
 			text.setVisible(false);
 			
-			
+			Text message = new Text("Press ESC to return to the menu");
+			message.setFont(Font.font("Calibri", 40));
+			message.setFill(Color.WHITE);
+			message.setTextOrigin(VPos.CENTER);
+			double widthMessage = message.getLayoutBounds().getWidth();
+			message.setLayoutX(psx / 2 - widthMessage / 2);
+			message.setLayoutY(350);
+			message.setVisible(false);
 
-			root.getChildren().addAll(joueur, ball, text);
+			root.getChildren().addAll(joueur, ball, text, message);
 
 			scene.setOnMouseMoved(e -> {
 
 				joueur.setX(e.getSceneX() - lrect / 2);
 			});
 
-			ballSpeedX = dx;
-			ballSpeedY = -dy;
+			//ballSpeedX = dx;
+			//ballSpeedY = -dy;
 
 			Timeline loop = new Timeline(new KeyFrame(Duration.millis(5), new EventHandler<ActionEvent>() {
 				public void handle(ActionEvent arg) {
-
+					
 					// deplacement:
 					ball.setCenterX(ball.getCenterX() + ballSpeedX);
 					ball.setCenterY(ball.getCenterY() - ballSpeedY);
@@ -159,7 +167,6 @@ public class Main extends Application {
 							dy += 0.25;
 							ballSpeedY = dy;
 							score += 1;
-
 						}
 					}
 
@@ -176,7 +183,7 @@ public class Main extends Application {
 					// collision bas
 					if (ball.getCenterY() >= (psy - (rball / 2))) {
 						text.setVisible(true);
-						//message.setVisible(true);
+						message.setVisible(true);
 						/*ballSpeedX = 0;
 						ballSpeedY = 0;
 						ball.setCenterX(25);
@@ -213,6 +220,8 @@ public class Main extends Application {
 		}
 	}
 
-	
+	public static void main(String[] args) {
+		launch(args);
+	}
 	
 }
