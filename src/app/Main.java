@@ -60,8 +60,8 @@ public class Main extends Application {
 			primaryStage.show();
 
 			VueController controller = loader.getController();
-
-			controller.getMediaplayer().play();
+			//controller.getMediaplayer().pause();
+			//controller.getMediaplayer().play();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -92,7 +92,6 @@ public class Main extends Application {
 			Pane layout = new Pane();
 			FXMLLoader loader = new FXMLLoader();
 
-			loader.setLocation(Main.class.getResource("Vue3.fxml"));
 			loader.setLocation(Main.class.getResource("Vue3.fxml"));
 			layout = (Pane) loader.load();
 			Scene scene = new Scene(layout);
@@ -196,9 +195,10 @@ public class Main extends Application {
 						ball.setCenterX(25);
 						ball.setCenterY(25); 
 						ball.setFill(Color.BLACK);
+
 						ball.toBack();*/
 						
-						scene.setOnKeyPressed(new EventHandler<KeyEvent>() { // detecte si on a appuié sur une touche
+						scene.setOnKeyPressed(new EventHandler<KeyEvent>() { // detecte si on a appuiï¿½ sur une touche
 							public void handle(KeyEvent event) {
 								if (event.getCode() == KeyCode.ESCAPE) {
 									Main.mainScene();
@@ -206,6 +206,7 @@ public class Main extends Application {
 								event.consume();
 							}
 						});
+
 					}
 					primaryStage.setTitle("Pong || Score: " + score);
 				}
@@ -227,9 +228,11 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
-
-	public static void main(String[] args) {
+	
+	public static void main(String [] args) {
 		launch(args);
 	}
+
+	
 	
 }
