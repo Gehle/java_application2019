@@ -177,6 +177,8 @@ public class Main extends Application {
 						ball.setCenterY(25); 
 						ball.setFill(Color.BLACK);
 						ball.toBack();
+						mediaplayer.pause();
+						Main.mainScene();
 					}
 					primaryStage.setTitle("Pong || Score: " + score);
 				}

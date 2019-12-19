@@ -79,6 +79,7 @@ public class VueController {
 	public void returned(ActionEvent event) {
 
 		Main.mainScene();
+		mediaplayer.pause();
 	}
 
 	public void game(ActionEvent event) {
